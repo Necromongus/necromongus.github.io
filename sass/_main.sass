@@ -1,0 +1,72 @@
+.main
+    position: relative
+    padding-top: 65px
+    padding-bottom: 60px
+    background: $text-color-dark url('../img/main/main-bg.jpg') center center no-repeat
+    background-size: cover
+    color: $text-color-light
+    z-index: 1
+    // Оформление затемнения фона
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0, 0.7)
+        z-index: 0
+    // Оформление главной картинки
+    &-img
+        position: relative
+        &::before
+            position: absolute
+            content: ''
+            left: 50%
+            margin-left: -195px
+            width: 390px
+            height: 390px
+            border: 1px solid #ffffff
+            border-radius: 50%
+            z-index: -1
+    // Заголовок
+    &-text
+        &__title
+            font-family: Roboto Bold, serif
+            font-size: 41px
+            margin-bottom: 20px
+        &__subtitle
+            margin-bottom: 27px
+            font-family: Roboto Light
+            font-size: 28px
+            font-weight: 500
+        &__form
+            padding: 30px 27px
+            background-color: rgba(255, 255, 255, 0.2)
+.form
+    display: flex
+    margin-bottom: 12px
+    // justify-content: space-between
+    &-title
+        margin-bottom: 20px
+        padding-right: 87px
+        font-family: Roboto Light
+        font-size: 20px
+        line-height: 30px
+        &__important
+            display: block
+            text-transform: uppercase
+            font-family: Roboto Bold
+    &__input
+        margin-right: 10px
+        padding: 20px
+        border-radius: 5px
+        border: none
+        font-family: Roboto Light
+        vertical-align: middle
+        flex-basis: 50%
+    &-small
+        padding-left: 19px
+        font-family: Roboto Light
+        font-size: 14px
