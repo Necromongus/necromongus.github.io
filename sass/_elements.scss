@@ -1,0 +1,33 @@
+.fill {
+    background-image: url('../img/Anonymous_Chess_symbols_set_3.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    // background-color: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    // top: 5px;
+    // left: 5px;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+  }
+
+  .hold {
+    border: solid 2px rgba(74, 240, 41, 0.295);
+  }
+
+  .hovered {
+    background: greenyellow;
+    // border-style: dashed;
+  }
+
+  .invisible{
+      display: none;
+  }
+  
+  .empty{
+      position: relative;
+  }
+
