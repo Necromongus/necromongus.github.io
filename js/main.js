@@ -51,18 +51,28 @@ function castleStart(){
     }
 
     function handleStart() {
-        fillClasses = this.closest("td").classList;
+        fillClasses = fill.closest("td").classList;
         this.className += ' hold';
+
+        if (event.targetTouches.length == 1) {
+            var touch=event.targetTouches[0];
+            touchOffsetX = touch.pageX - touch.target.offsetLeft;
+            touchOffsetY = touch.pageY - touch.target.offsetTop;
+            }
         // setTimeout(() => (this.className = 'invisible'), 0);
     }
 
     function handleEnd(e) {
+        fill.style.top = "";
+        fill.style.left = "";
         this.className = 'fill';
         var myLocation = event.changedTouches[0];
         var realTarget = document.elementFromPoint(myLocation.clientX, myLocation.clientY);
+        console.log(realTarget.classList);
         if (realTarget.classList[1] === fillClasses[1] || realTarget.classList[2] === fillClasses[2]) {
             realTarget.append(fill);
-        } 
+        }
+
     }
 
     function handleCancel() {
@@ -70,7 +80,13 @@ function castleStart(){
     }
 
     function handleMove(e) {
-        fillClasses = fill.closest("td").classList;
+        //fillClasses = fill.closest("td").classList;
+        e.preventDefault();
+        if (event.targetTouches.length == 1) {
+            var touch = event.targetTouches[0];
+            fill.style.left = touch.pageX-touchOffsetX + 'px';
+            fill.style.top = touch.pageY-touchOffsetY + 'px';
+            }
     }
 
 
