@@ -48,6 +48,7 @@ html, body {
   top: 0px;
   left: 0px;
   cursor: pointer;
+  z-index: 4;
 }
 
 .hold {
