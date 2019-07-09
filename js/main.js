@@ -68,7 +68,7 @@ function castleStart(){
         this.className = 'fill';
         var myLocation = event.changedTouches[0];
         var realTarget = document.elementFromPoint(myLocation.clientX, myLocation.clientY);
-        console.log(realTarget.classList);
+        // console.log(realTarget.classList);
         if (realTarget.classList[1] === fillClasses[1] || realTarget.classList[2] === fillClasses[2]) {
             realTarget.append(fill);
         }
