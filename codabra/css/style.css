@@ -41,6 +41,14 @@ body {
           box-sizing: border-box;
 }
 
+::selection {
+  background: transparent;
+}
+
+::-moz-selection {
+  background: transparent;
+}
+
 @media (min-width: 1440px) {
   #main-form {
     display: -webkit-box;
