@@ -1,0 +1,78 @@
+html, body {
+  height: 90%;
+}
+
+#table {
+  width: 100%;
+  height: 100%;
+}
+
+.white {
+  background: white;
+}
+
+.black {
+  background: black;
+}
+
+.grid {
+  width: 50%;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+.grid:after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+}
+
+.fill {
+  background-image: url("../img/Anonymous_Chess_symbols_set_3.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.hold {
+  border: solid 2px rgba(74, 240, 41, 0.295);
+}
+
+.hovered {
+  background: greenyellow;
+}
+
+.invisible {
+  display: none;
+}
+
+.empty {
+  position: relative;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: bisque;
+}
+/*# sourceMappingURL=style.css.map */
