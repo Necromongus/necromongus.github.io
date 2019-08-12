@@ -1,0 +1,374 @@
+@font-face {
+  font-family: 'Geometria Bold';
+  src: url("/start/fonts/Geometria Bold/Geometria-Bold.eot");
+  src: url("/start/fonts/Geometria Bold/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("/start/fonts/Geometria Bold/Geometria-Bold.woff") format("woff"), url("/start/fonts/Geometria Bold/Geometria-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria Regular';
+  src: url("/start/fonts/Geometria Regular/Geometria.eot");
+  src: url("/start/fonts/Geometria Regular/Geometria.eot?#iefix") format("embedded-opentype"), url("/start/fonts/Geometria Regular/Geometria.woff") format("woff"), url("/start/fonts/Geometria Regular/Geometria.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  margin: 0;
+  background-image: url("/start/img/bg4.png");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (orientation: landscape) {
+  #main-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 72vh;
+    height: 90%;
+    margin: auto auto;
+    background: #000000;
+    border: 3px solid #8FF0FF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
+            box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
+  }
+  #start-label {
+    width: 90%;
+    font-family: Geometria Bold;
+    font-size: 3vh;
+    line-height: 3vh;
+    color: #E9FCFF;
+    text-align: center;
+    text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED;
+    margin: 0px auto;
+  }
+  #start-image {
+    width: 55%;
+  }
+  #start-text {
+    width: 90%;
+    font-family: Geometria Regular;
+    font-size: 2.5vh;
+    line-height: 2.7vh;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+  }
+  #start-btn {
+    color: white;
+    background-image: url("/start/img/s-btn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50%;
+    height: 12%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+  #start-btn::after {
+    background-image: url("/start/img/Button-pixels.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 7vw;
+    height: 8vh;
+    content: "";
+    position: absolute;
+    top: -2.3vw;
+    right: -6.4vh;
+  }
+  .start-btn_text {
+    margin: auto;
+    font-family: Geometria Regular;
+    font-size: 2.2vh;
+    line-height: 29px;
+    color: #06001F;
+    text-align: center;
+  }
+  #question {
+    width: 95%;
+    margin: 0 auto;
+    font-family: Geometria Bold;
+    font-size: 2.2vh;
+    line-height: 2.2vh;
+    text-align: center;
+    color: #E9FCFF;
+    margin-top: 1%;
+  }
+  #image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #image img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+    height: 45%;
+  }
+  .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    text-align: center;
+    width: 90%;
+    cursor: pointer;
+    height: 20%;
+    background: #000000;
+    border: 3px solid #8FF0FF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 12px;
+    -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);
+            box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);
+  }
+  .btn_text {
+    margin: auto;
+    font-family: Geometria Regular;
+    font-size: 2vh;
+  }
+  .btn:hover {
+    border: 3px solid #FFDD9B;
+    -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);
+            box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);
+  }
+  #btn4 {
+    margin-bottom: 3%;
+  }
+}
+
+@media (orientation: portrait) {
+  #main-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 95%;
+    height: 90%;
+    margin: auto auto;
+    background: #000000;
+    border: 3px solid #8FF0FF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
+            box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
+  }
+  #start-label {
+    width: 95%;
+    font-family: Geometria Bold;
+    font-size: 3.3vh;
+    line-height: 3.3vh;
+    color: #E9FCFF;
+    text-align: center;
+    text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED;
+    margin: 0px auto;
+  }
+  #start-image {
+    width: 70%;
+  }
+  #start-text {
+    width: 95%;
+    font-family: Geometria Regular;
+    font-size: 2.0vh;
+    line-height: 2.7vh;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+  }
+  #start-btn {
+    color: white;
+    background-image: url("/start/img/s-btn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 80%;
+    height: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+  #start-btn::after {
+    background-image: url("/start/img/Button-pixels.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 15vw;
+    height: 15vw;
+    content: "";
+    position: absolute;
+    top: -5.0vh;
+    right: -7.4vw;
+  }
+  .start-btn_text {
+    margin: auto;
+    font-family: Geometria Bold;
+    font-size: 2.3vh;
+    line-height: 3vh;
+    color: #06001F;
+    text-align: center;
+  }
+  #question {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Geometria Bold;
+    font-size: 4vw;
+    line-height: 4vw;
+    text-align: center;
+    color: #E9FCFF;
+  }
+  #image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #image img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+    height: 45%;
+  }
+  .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    text-align: center;
+    width: 90%;
+    cursor: pointer;
+    height: 20%;
+    background: #000000;
+    border: 3px solid #8FF0FF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 12px;
+    -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);
+            box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);
+  }
+  .btn_text {
+    margin: auto;
+    font-family: Geometria Regular;
+    font-size: 3.2vw;
+  }
+  .btn:hover {
+    border: 3px solid #FFDD9B;
+    -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);
+            box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);
+  }
+  #btn4 {
+    margin-bottom: 3%;
+  }
+}
+
+#question, .btns, #image {
+  display: none;
+}
+
+#ending-form {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
