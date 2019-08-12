@@ -311,6 +311,7 @@ main {
   }
   #image img {
     width: 85vw;
+    height: 47.8vw;
     margin: 0 auto;
   }
   .btns {
