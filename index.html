@@ -10,15 +10,23 @@
     <!-- vk-share -->
     <script type="text/javascript" src="https://vk.com/js/api/share.js?93" charset="windows-1251"></script>
     <!-- fb-share -->
-    <meta property="og:url"           content="https://vk.com/str8toheaven" />
+    <meta property="og:url"           content="https://necromongus.github.io/" />
     <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Your Website Title" />
-    <meta property="og:description"   content="Your description" />
-    <meta property="og:image"         content="https://www.ridus.ru/images/2019/5/6/914965/main_slider_8ccbd00c4a.jpg" />
+    <meta property="og:title"         content="Codabra" />
+    <meta property="og:description"   content="Quest" />
+    <meta property="og:image"         content="https://necromongus.github.io/img/0q.png" />
 
 
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <main>
         <div id="main-form">
             <div id="start-label">ПУТЕШЕСТВИЕ В ШКОЛУ</div>
@@ -27,14 +35,17 @@
             <div id="image"><img src="/img/1q.png" alt="image1"></div>
             <div id="start-text">Это приглашение в самую крутую школу будущего на день открытых дверей. Здесь ты сможешь узнать, какие профессии из мира IT тебе подходят. В нашу школу попасть непросто. Сначала мы проверим твои силы.</div>
             <div id="start-btn"><div class="start-btn_text">Узнать кто я из мира IT</div></div>
-            <div id="btn1" class="btn"><div class="ans1 btn_text">Поищу в интернете, что это может быть</div></div>
-            <div id="btn2" class="btn"><div class="ans2 btn_text">Черная коробка? Украшу ее фломастерами<br> и блестками, конечно же</div> </div>
-            <div id="btn3" class="btn"><div class="ans3 btn_text">Сфоткаю и отправлю друзьям, чтоб помогли</div> </div>
-            <div id="btn4" class="btn"><div class="ans4 btn_text">Пну ее ногой и посмотрю, что будет</div> </div>
+            <div class="btns">
+                <div id="btn1" class="btn"><div class="ans1 btn_text">Поищу в интернете, что это может быть</div></div>
+                <div id="btn2" class="btn"><div class="ans2 btn_text">Черная коробка? Украшу ее фломастерами<br> и блестками, конечно же</div> </div>
+                <div id="btn3" class="btn"><div class="ans3 btn_text">Сфоткаю и отправлю друзьям, чтоб помогли</div> </div>
+                <div id="btn4" class="btn"><div class="ans4 btn_text">Пну ее ногой и посмотрю, что будет</div> </div>
+            </div>
+            
         </div>
         <div id="ending-form">
-            <div class="ending-form-top"><div class="ending-form-top_text">Предсказываем, что...</div></div>
-            <div class="ending-form-wrapper">
+            <div class="ending-form-top">
+                <div class="ending-form-top_text">Предсказываем, что...</div>
                 <div id="ending-form-result">
                     <div class="ending-form-result-wrapper">
                     <div id="ending-form-result_role">Ты — мастер тёмных секретов</div>
@@ -42,31 +53,28 @@
                     <img src="/img/e1i.png" alt="role-image" id="ending-form-result_image">
                     </div>   
                 </div>
+            </div>                
                 <div class="ending-form-bottom">
                     <div class="share-text">Поделись результатом с друзьями</div>
                     <div class="share-btns">
 
-                    
-
+                        <div class="fb-share-button" 
+                            data-href="https://necromongus.github.io/" 
+                            data-layout="button">
+                        </div>
                         <script type="text/javascript">
                             document.write(VK.Share.button({
-                              url: 'https://vk.com/str8toheaven',
-                              title: 'Это ты',
-                              image: 'https://www.ridus.ru/images/2019/5/6/914965/main_slider_8ccbd00c4a.jpg',
+                              url: 'https://necromongus.github.io/',
+                              title: 'Codabra Quest',
+                              image: 'https://necromongus.github.io/img/0q.png',
                               noparse: true, 
                             },
-                            {type: 'custom', text: '<img src="/img/vk.png" />'}
+                            {type: 'custom', text: '<img class="share-icon" src="/img/vk.png" />'}
                             ));
                         </script>
-                        
-                       
-                        
-                        
 
                     </div>
-
-                    </div>
-                </div>
+                    </div>                
             </div>
         </div>
     </main>
