@@ -1,23 +1,15 @@
 @font-face {
   font-family: 'Geometria Bold';
-  src: url("/fonts/Geometria Bold/Geometria-Bold.eot");
-  src: url("/fonts/Geometria Bold/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Geometria Bold/Geometria-Bold.woff") format("woff"), url("/fonts/Geometria Bold/Geometria-Bold.ttf") format("truetype");
+  src: url("/start/fonts/Geometria Bold/Geometria-Bold.eot");
+  src: url("/start/fonts/Geometria Bold/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("/start/fonts/Geometria Bold/Geometria-Bold.woff") format("woff"), url("/start/fonts/Geometria Bold/Geometria-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Geometria Regular';
-  src: url("/fonts/Geometria Regular/Geometria.eot");
-  src: url("/fonts/Geometria Regular/Geometria.eot?#iefix") format("embedded-opentype"), url("/fonts/Geometria Regular/Geometria.woff") format("woff"), url("/fonts/Geometria Regular/Geometria.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Geometria Medium';
-  src: url("/fonts/Geometria Medium/Geometria-Medium.eot");
-  src: url("/fonts/Geometria Medium/Geometria-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Geometria Medium/Geometria-Medium.woff") format("woff"), url("/fonts/Geometria Medium/Geometria-Medium.ttf") format("truetype");
+  src: url("/start/fonts/Geometria Regular/Geometria.eot");
+  src: url("/start/fonts/Geometria Regular/Geometria.eot?#iefix") format("embedded-opentype"), url("/start/fonts/Geometria Regular/Geometria.woff") format("woff"), url("/start/fonts/Geometria Regular/Geometria.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,7 +34,7 @@ body {
           justify-content: center;
   height: 100%;
   margin: 0;
-  background-image: url("/img/bg4.png");
+  background-image: url("/start/img/bg4.png");
   background-color: #000;
   background-repeat: no-repeat;
   background-position: center center;
@@ -109,7 +101,7 @@ main {
   }
   #start-text {
     width: 90%;
-    font-family: Geometria Medium;
+    font-family: Geometria Regular;
     font-size: 2.5vh;
     line-height: 2.7vh;
     text-align: center;
@@ -118,12 +110,12 @@ main {
   }
   #start-btn {
     color: white;
-    background-image: url("/img/s-btn.png");
+    background-image: url("/start/img/s-btn.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 60%;
-    height: 15%;
+    width: 50%;
+    height: 12%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -131,7 +123,7 @@ main {
     cursor: pointer;
   }
   #start-btn::after {
-    background-image: url("/img/Button-pixels.png");
+    background-image: url("/start/img/Button-pixels.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -144,8 +136,8 @@ main {
   }
   .start-btn_text {
     margin: auto;
-    font-family: Geometria Bold;
-    font-size: 2.5vh;
+    font-family: Geometria Regular;
+    font-size: 2.2vh;
     line-height: 29px;
     color: #06001F;
     text-align: center;
@@ -166,8 +158,7 @@ main {
     display: flex;
   }
   #image img {
-    width: 31vw;
-    height: 17.5vw;
+    width: 90%;
     margin: 0 auto;
   }
   .btns {
@@ -219,146 +210,6 @@ main {
   #btn4 {
     margin-bottom: 3%;
   }
-  #ending-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative;
-    height: 90%;
-    width: 72vh;
-  }
-  .ending-form-top {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 10%;
-    width: 72vh;
-    background-color: #000;
-    border: 3px solid #8FF0FF;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    -webkit-box-shadow: 0 -5px 20px rgba(0, 66, 237, 0.86);
-            box-shadow: 0 -5px 20px rgba(0, 66, 237, 0.86);
-  }
-  .ending-form-top_text {
-    color: #ffffff;
-    margin: auto;
-    font-family: Geometria Regular;
-    font-size: 3.2vh;
-    line-height: 2vw;
-  }
-  .ending-form-wrapper {
-    position: relative;
-    height: 80%;
-  }
-  .ending-form-result-wrapper {
-    padding-top: 5vh;
-    padding-left: 3vw;
-  }
-  .ending-form-bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    height: 45%;
-    width: 72vh;
-    background-color: #000;
-    border: 3px solid #8FF0FF;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    -webkit-box-shadow: 0 15px 20px rgba(0, 66, 237, 0.86);
-            box-shadow: 0 15px 20px rgba(0, 66, 237, 0.86);
-    margin: 0 auto;
-    margin-top: 55%;
-  }
-  #ending-form-result {
-    width: 75vh;
-    height: 43vh;
-    background-image: url("/img/e1bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 65%;
-    left: -2.5%;
-    z-index: -1;
-  }
-  #ending-form-result_role {
-    font-family: Geometria Bold;
-    font-size: 4.5vh;
-    line-height: 4.5vh;
-    color: #E9FCFF;
-    width: 45vh;
-  }
-  #ending-form-result_description {
-    width: 45vh;
-    font-family: Geometria Regular;
-    font-size: 2.5vh;
-    line-height: 120%;
-    color: #FFFFFF;
-    margin-top: 10%;
-  }
-  #ending-form-result_image {
-    position: absolute;
-    width: 37vh;
-    top: 15%;
-    right: 2%;
-    z-index: -1;
-  }
-  .share-text {
-    width: 56vh;
-    text-align: center;
-    font-family: Geometria Regular;
-    font-size: 2.3vh;
-    line-height: 2.3vh;
-    color: #5D5D5D;
-  }
-  .fb-btn {
-    width: 50px;
-    height: 50px;
-    background-image: url("/img/facebook.png");
-  }
-  .share-btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-  }
-  .share-icon {
-    width: 12vh;
-  }
-  .fb-share-button {
-    content: '213';
-  }
 }
 
 @media (orientation: portrait) {
@@ -390,7 +241,7 @@ main {
   }
   #start-label {
     width: 95%;
-    font-family: Geometria Medium;
+    font-family: Geometria Bold;
     font-size: 3.3vh;
     line-height: 3.3vh;
     color: #E9FCFF;
@@ -403,7 +254,7 @@ main {
   }
   #start-text {
     width: 95%;
-    font-family: Geometria Medium;
+    font-family: Geometria Regular;
     font-size: 2.0vh;
     line-height: 2.7vh;
     text-align: center;
@@ -412,7 +263,7 @@ main {
   }
   #start-btn {
     color: white;
-    background-image: url("/img/s-btn.png");
+    background-image: url("/start/img/s-btn.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -425,7 +276,7 @@ main {
     cursor: pointer;
   }
   #start-btn::after {
-    background-image: url("/img/Button-pixels.png");
+    background-image: url("/start/img/Button-pixels.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -439,7 +290,7 @@ main {
   .start-btn_text {
     margin: auto;
     font-family: Geometria Bold;
-    font-size: 2.5vh;
+    font-size: 2.3vh;
     line-height: 3vh;
     color: #06001F;
     text-align: center;
@@ -459,8 +310,7 @@ main {
     display: flex;
   }
   #image img {
-    width: 85vw;
-    height: 47.8vw;
+    width: 90%;
     margin: 0 auto;
   }
   .btns {
@@ -514,11 +364,11 @@ main {
   }
 }
 
-#start-label, #start-text, #start-btn, #start-image {
+#question, .btns, #image {
   display: none;
 }
 
-#main-form {
+#ending-form {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
