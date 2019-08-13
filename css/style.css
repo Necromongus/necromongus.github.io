@@ -656,7 +656,7 @@ main {
   }
   #ending-form-result {
     width: 105%;
-    height: 60vh;
+    height: 50vh;
     background-image: url("/img/e1bg.png");
     background-size: contain;
     background-repeat: repeat-y;
