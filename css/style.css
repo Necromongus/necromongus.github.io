@@ -656,7 +656,7 @@ main {
   }
   #ending-form-result {
     width: 105%;
-    height: 80vh;
+    height: 60vh;
     background-image: url("/img/e1bg.png");
     background-size: contain;
     background-repeat: repeat-y;
@@ -708,7 +708,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    margin-top: -4vh;
+    margin-top: -4.5vh;
     margin-bottom: -5vh;
   }
   .share-icon {
