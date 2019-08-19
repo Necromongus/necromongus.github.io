@@ -54,13 +54,14 @@ async function StartQuestEn() {
     document.querySelector('.btns').setAttribute('onselectstart', "return false");
     
     document.querySelector('.loading-label').innerHTML = 'Lights go dim and a voice tells you that you have been accepted to the super-awesome School of the Future!';
-    document.querySelector('.loading-text').innerHTML = "We've found our who you can be at our school. Would you like to know your result?";
+    document.querySelector('.loading-text').innerHTML = "We've found out who you can be at our school. Would you like to know your result?";
     document.querySelector('.loading-btn_text').innerHTML = 'Show me!';
     document.querySelector('.share-text').innerHTML = 'Share with your friends';
     document.querySelector('.ending-form-top_text').innerHTML = 'Predict that...';
     
 
 }
+
 
 async function LoadScreen() {
     for (const mainElement of mainElements){
