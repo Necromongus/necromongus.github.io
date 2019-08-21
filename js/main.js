@@ -9,10 +9,10 @@ function sleep(ms) {
   }
 
 
-btn1.addEventListener('click', ClickGlow1);
-btn2.addEventListener('click', ClickGlow2);
-btn3.addEventListener('click', ClickGlow3);
-btn4.addEventListener('click', ClickGlow4);
+btn1.addEventListener('touchstart', ClickGlow1);
+btn2.addEventListener('touchstart', ClickGlow2);
+btn3.addEventListener('touchstart', ClickGlow3);
+btn4.addEventListener('touchstart', ClickGlow4);
 
 async function ClickGlow1(){
     document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn1 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
