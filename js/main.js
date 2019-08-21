@@ -1,10 +1,39 @@
 let startElements = document.querySelectorAll('.start');
 let mainElements = document.querySelectorAll('.main');
 let loadElements = document.querySelectorAll('.load');
+const btns = document.querySelectorAll('.btn');
+
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
+
+
+btn1.addEventListener('click', ClickGlow1);
+btn2.addEventListener('click', ClickGlow2);
+btn3.addEventListener('click', ClickGlow3);
+btn4.addEventListener('click', ClickGlow4);
+
+async function ClickGlow1(){
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn1 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
+    await sleep(500);
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn1 {border: 3px solid #8FF0FF; -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86); box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);}</style>";
+}
+async function ClickGlow2(){
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn2 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
+    await sleep(500);
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn2 {border: 3px solid #8FF0FF; -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86); box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);}</style>";
+}
+async function ClickGlow3(){
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn3 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
+    await sleep(500);
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn3 {border: 3px solid #8FF0FF; -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86); box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);}</style>";
+}
+async function ClickGlow4(){
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn4 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
+    await sleep(500);
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn4 {border: 3px solid #8FF0FF; -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86); box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);}</style>";
+}
 
 async function StartQuest() {
     for (const startElement of startElements){
@@ -256,7 +285,7 @@ let result3p = new ResultContent(
     'Благодаря железной логике он сможет подчинить себе любого робота. Стоит ему выучить хотя бы один их язык — и они завоюют для него мир',
     '/img/r3.png',
     '/img/bg3.png',
-    'Да! С котом он общаться не научился, научится хотя бы с роботом-котом',
+    'Да! Давно пора научиться общаться с холодильником',
     '/img/i3.png',
     "Ну что, он готов учиться в нашей школе?",
     "В будущем он станет разработчиком программного обеспечения или создателем игр"
@@ -267,7 +296,7 @@ let result4p = new ResultContent(
     'Довольствоваться малым – совсем не про него! Реализовать его амбиции лучше всего поможет великий интернет. Там он реализует всё, что задумает',
     '/img/r4.png',
     '/img/bg4.png',
-    'Да! А вот тут я не придумала&nbspпанчлайн',
+    'Да! Надо только найти подходящие&nbspботинки...&nbspв&nbspинтернете',
     '/img/i4.png',
     "Ну что, он готов учиться в нашей школе?",
     "В будущем он станет веб-разработчиком и создаст много хороших сайтов"
@@ -759,13 +788,13 @@ let screen15a = new MainContent(
     "/img/5q.jpg",
     "Ну… попробую найти логику. Вот этот значок похож на&nbspсмешную рожицу", "screen12.RA();",
     "Сниму на камеру и разошлю всем друзьям — <br>пусть помогают", "screen12.RB();",
-    "Кажется, что-то похожее было в одной из миллиона игр, в&nbspкоторые я играл(а)…", "screen12.RA();",
+    "Кажется, что-то похожее было в одной из миллиона игр, в&nbspкоторые я играл…", "screen12.RA();",
     "Ого, шифры! Прям как в кино с искателями сокровищ!", "screen12.RB();",
     "screen16a.changeContent();"
 )
 
 let screen16a = new MainContent(
-    "Расшифрованное послание получилось таким: отправляйся в самый дальний коридор и познакомься с удивительными существами. Что&nbspдумаешь?", 
+    "Расшифрованное послание получилось таким: «Отправляйся в самый дальний коридор и познакомься с удивительными существами» Что&nbspдумаешь?", 
     "/img/6q.jpg",
     "Надеюсь, это что-то сказочное", "screen12.RA();",
     "Что-то становится слишком похоже на&nbspфильм ужасов...", "screen12.RB();",
@@ -805,7 +834,7 @@ let screen15b = new MainContent(
 )
 
 let screen16b = new MainContent(
-    "Расшифрованное послание получилось таким: отправляйся в самый дальний коридор и познакомься с удивительными существами. Что&nbspдумаешь?", 
+    "Расшифрованное послание получилось таким: «Отправляйся в самый дальний коридор и познакомься с удивительными существами» Что&nbspдумаешь?", 
     "/img/6q.jpg",
     "Да просто пойду и посмотрю, это точно не будет опасно", "screen12.RB();",
     "Надо подробнее изучить сайт этой школы. Там, наверное, и про этих существ написано", "screen12.RC();",
@@ -871,13 +900,13 @@ let screen25a = new MainContent(
     "/img/5q.jpg",
     "Ну… попробую найти логику. Вот этот значок похож на&nbspсмешную рожицу", "screen12.RA();",
     "Сниму на камеру и разошлю всем друзьям — <br>пусть помогают", "screen12.RB();",
-    "Кажется, что-то похожее было в одной из миллиона игр, в&nbspкоторые я играл(а)…", "screen12.RA();",
+    "Кажется, что-то похожее было в одной из миллиона игр, в&nbspкоторые я играл…", "screen12.RA();",
     "Ого, шифры! Прям как в кино с искателями сокровищ!", "screen12.RB();",
     "screen26a.changeContent();"
 )
 
 let screen26a = new MainContent(
-    "Расшифрованное послание получилось таким: отправляйся в самый дальний коридор и познакомься с удивительными существами. Что&nbspдумаешь?", 
+    "Расшифрованное послание получилось таким: «Отправляйся в самый дальний коридор и познакомься с удивительными существами» Что&nbspдумаешь?", 
     "/img/6q.jpg",
     "Надеюсь, это что-то сказочное. Нет, лучше из научной фантастики", "screen12.RA();",
     "Что-то становится слишком похоже на фильм ужасов...", "screen12.RB();",
@@ -917,7 +946,7 @@ let screen25b = new MainContent(
 )
 
 let screen26b = new MainContent(
-    "Расшифрованное послание получилось таким: отправляйся в самый дальний коридор и познакомься с удивительными существами. Что&nbspдумаешь?", 
+    "Расшифрованное послание получилось таким: «Отправляйся в самый дальний коридор и познакомься с удивительными существами» Что&nbspдумаешь?", 
     "/img/6q.jpg",
     "Да просто пойду и посмотрю, это точно не будет опасно", "screen12.RB();",
     "Надо подробнее изучить сайт этой школы. Там, наверное, и про этих существ написано", "screen12.RC();",
@@ -993,13 +1022,13 @@ let screen35a = new MainContent(
     "/img/5q.jpg",
     "Ну… попробую найти логику. Вот этот значок похож на&nbspсмешную рожицу", "screen12.RA();",
     "Сниму на камеру и разошлю всем друзьям — <br>пусть помогают", "screen12.RB();",
-    "Кажется, что-то похожее было в одной из миллиона игр, в&nbspкоторые я играл(а)…", "screen12.RA();",
+    "Кажется, что-то похожее было в одной из миллиона игр, в&nbspкоторые я играл…", "screen12.RA();",
     "Ого, шифры! Прям как в кино с искателями сокровищ!", "screen12.RB();",
     "screen36a.changeContent();"
 )
 
 let screen36a = new MainContent(
-    "Расшифрованное послание получилось таким: отправляйся в самый дальний коридор и познакомься с удивительными существами. Что&nbspдумаешь?", 
+    "Расшифрованное послание получилось таким: «Отправляйся в самый дальний коридор и познакомься с удивительными существами» Что&nbspдумаешь?", 
     "/img/6q.jpg",
     "Надеюсь, это что-то сказочное. Нет, лучше из научной фантастики", "screen12.RA();",
     "Что-то становится слишком похоже на фильм ужасов...", "screen12.RB();",
@@ -1039,7 +1068,7 @@ let screen35b = new MainContent(
 )
 
 let screen36b = new MainContent(
-    "Расшифрованное послание получилось таким: отправляйся в самый дальний коридор и познакомься с удивительными существами. Что&nbspдумаешь?", 
+    "Расшифрованное послание получилось таким: «Отправляйся в самый дальний коридор и познакомься с удивительными существами» Что&nbspдумаешь?", 
     "/img/6q.jpg",
     "Да просто пойду и посмотрю, это точно не будет опасно", "screen12.RA();",
     "Надо подробнее изучить сайт этой школы. Там, наверное, и про этих существ написано", "screen12.RB();",
@@ -1071,7 +1100,7 @@ let screen38b = new MainContent(
 // РОДИТЕЛИ
 
 let screen42 = new MainContent(
-    "Что ж, тогда давайте посмотрим, как хорошо Вы знаете своего ребёнка. Ему сказали, что нужно подняться на 118 этаж. Что он/она будет делать?", 
+    "Что ж, тогда давайте посмотрим, как хорошо Вы знаете своего ребёнка. Ему сказали, что нужно подняться на 118 этаж. Что он будет делать?", 
     "/img/2q.jpg",
     "Найдёт лестницу, это отличный повод размяться!", "screen12.B();",
     "Вызовет личного дракона, конечно", "screen12.A();",
@@ -1081,7 +1110,7 @@ let screen42 = new MainContent(
 )
 
 let screen43 = new MainContent(
-    "Ваш ребёнок поднимается и попадает в большой зал, но здесь никого и только маленькая чёрная коробка посреди зала. Что он/она будет с ней делать?", 
+    "Ваш ребёнок поднимается и попадает в большой зал, но здесь никого и только маленькая чёрная коробка посреди зала. Что он будет с ней делать?", 
     "/img/3q.jpg",
     "Поищет в интернете, что это может быть", "screen12.B();",
     "Чёрная коробка? Украсит её фломастерами и блёстками, конечно же", "screen12.A();",
@@ -1105,7 +1134,7 @@ let screen45a = new MainContent(
     "/img/5q.jpg",
     "Ну… попробует найти логику. Например, что вот этот значок похож на&nbspсмешную рожицу", "screen12.RA();",
     "Снимет на камеру и разошлет всем друзьям — <br>пусть помогают", "screen12.RB();",
-    "Что-то похожее наверняка было в одной из миллиона игр, в&nbspкоторые он/она играл(а)…", "screen12.RA();",
+    "Что-то похожее наверняка было в одной из миллиона игр, в&nbspкоторые он играл…", "screen12.RA();",
     "Будет в восторге, это же шифры! Прям как в кино с искателями сокровищ", "screen12.RB();",
     "screen46a.changeContent();"
 )
@@ -1124,7 +1153,7 @@ let screen47a = new MainContent(
     "В дальнем коридоре Вашего ребёнка встречают… инопланетяне! Кажется, они вполне мирные, как&nbspон&nbspбудет себя вести?", 
     "/img/7q.jpg",
     "Сразу станет фоткать! Иначе ему же никто не поверит", "screen12.RB();",
-    "начнёт расспрашивать их про планету, с&nbspкоторой они&nbspприлетели", "screen12.RA();",
+    "Начнёт расспрашивать их про планету, с&nbspкоторой они&nbspприлетели", "screen12.RA();",
     "Мирные? Он смотрел все фильмы про инопланетян<br>и&nbspвсё-таки будет поосторожнее", "screen12.RB();",
     "Они же совсем не похожи на людей! Так что постарается влиться в коллектив и поближе их рассмотреть", "screen12.RA();",
     "screen48a.changeContent();"
@@ -1133,10 +1162,10 @@ let screen47a = new MainContent(
 let screen48a = new MainContent(
     "После недолгого общения новые знакомые приглашают Вашего ребёнка в гости на свою планету. Что&nbspон&nbspответит?", 
     "/img/8q.jpg",
-    '"Сначала найду всю-всю информацию о них и их планете, а&nbspпотом уже дам ответ"', "",
-    '"Да! Поскорей бы выложить фотки с другой планеты..."', "",
-    '"Слишком подозрительное предложение. Мы же едва знакомы!"', "",
-    '"Хорошо, но сначала мне нужно собрать все свои вещи и&nbspобязательно захватить пару друзей"', "",
+    '«Сначала найду всю-всю информацию о них и их планете, а&nbspпотом уже дам ответ»', "",
+    '«Да! Поскорей бы выложить фотки с другой планеты...»', "",
+    '«Слишком подозрительное предложение. Мы же едва знакомы!»', "",
+    '«Хорошо, но сначала мне нужно собрать все свои вещи и&nbspобязательно захватить пару друзей»', "",
     "screen48a.calculateDirection4a();"
 )
 
@@ -1227,8 +1256,8 @@ let screen14En = new MainContent(
 let screen15aEn = new MainContent(
     "A big screen lights up in the middle of the room with a map and some text on it, but all the text is encrypted. What are you going to do?", 
     "/img/5q.jpg",
-    "Well... I'll try to find some patterns. This sign here looks like a funny face.", "screen12.RA();",
-    "I'll take a photo and send it to all my friends so that they can help.", "screen12.RB();",
+    "Well... I'll try to find some patterns. This sign here looks like a funny face", "screen12.RA();",
+    "I'll take a pic and send it to my friends for help", "screen12.RB();",
     "I think I've seen something similar in one of the computer games I've played...", "screen12.RA();",
     "Wow, an ecnryption! Just like in the treasure hunt movies!", "screen12.RB();",
     "screen16aEn.changeContent();"
@@ -1237,7 +1266,7 @@ let screen15aEn = new MainContent(
 let screen16aEn = new MainContent(
     "The deciphered message is this: «Go to the farthest corridor and meet some amazing creatures». What do you think?", 
     "/img/6q.jpg",
-    "I hope it's something from a fairy tale. Or, even better, from sci-fi.", "screen12.RA();",
+    "I hope it's something from a fairy tale", "screen12.RA();",
     "It's starting to feel like some kind of a horror movie...", "screen12.RB();",
     "I wonder if they're real. Let's see!", "screen12.RA();",
     "Wow, fantastic creatures, really? This needs to go on YouTube! ", "screen12.RB();",
@@ -1250,7 +1279,7 @@ let screen17aEn = new MainContent(
     "I must take a picture immeadiately or nobody is going to believe me!", "screen12.RB();",
     "I'll ask them questions about the planet where they came from", "screen12.RA();",
     "Peaceful, huh? I remember all the films about aliens, so I'll be careful", "screen12.RB();",
-    "Wow, how many eyes do they have? I should joing their comapny and have a closer look", "screen12.RA();",
+    "Wow, how many eyes do they have? I should joing their company and have a closer look", "screen12.RA();",
     "screen18aEn.changeContent();"
 )
 
@@ -1288,9 +1317,9 @@ let screen17bEn = new MainContent(
     "In the farthest corridore you meet... aliens! They seem quite peaceful, so how are you going to behave?", 
     "/img/7q.jpg",
     "Well, first I'll say 'Hi' and just see what happens", "screen12.RB();",
-    "I'll try to establish contact, obviously. Hey, guys, are you on Facebook?", "screen12.RC();",
+    "I'll try to establish contact, obviously. Hey, guys, what games do you like to play?", "screen12.RC();",
     "I should try to find out who they are and what their business is without getting them suspicious", "screen12.RA();",
-    "I'll check if I can be an inter-plantery exchange student on the website!", "screen12.RC();",
+    "If they came to Earth then maybe I can go to their planet!", "screen12.RC();",
     "screen18bEn.changeContent();"
 )
 
@@ -1349,7 +1378,7 @@ let screen25aEn = new MainContent(
 let screen26aEn = new MainContent(
     "The deciphered message is this: «Go to the farthest corridor and meet some amazing creatures». What do you think?", 
     "/img/6q.jpg",
-    "I hope it's something from a fairy tale. Or, even better, from sci-fi.", "screen12.RA();",
+    "I hope it's something from a fairy tale. Or, even better, from sci-fi", "screen12.RA();",
     "It's starting to feel like some kind of a horror movie...", "screen12.RB();",
     "I wonder if they're real. Let's see!", "screen12.RA();",
     "Wow, fantastic creatures, really? This needs to go on YouTube! ", "screen12.RB();",
@@ -1362,7 +1391,7 @@ let screen27aEn = new MainContent(
     "I must take a picture immeadiately or nobody is going to believe me!", "screen12.RB();",
     "I'll ask them questions about the planet where they came from", "screen12.RA();",
     "Peaceful, huh? I remember all the films about aliens, so I'll be careful", "screen12.RB();",
-    "Wow, how many eyes do they have? I should joing their comapny and have a closer look", "screen12.RA();",
+    "Wow, how many eyes do they have? I should joing their company and have a closer look", "screen12.RA();",
     "screen28aEn.changeContent();"
 )
 
@@ -1484,7 +1513,7 @@ let screen37aEn = new MainContent(
     "I must take a picture immeadiately or nobody is going to believe me!", "screen12.RB();",
     "I'll ask them questions about the planet where they came from", "screen12.RA();",
     "Peaceful, huh? I remember all the films about aliens, so I'll be careful", "screen12.RB();",
-    "Wow, how many eyes do they have? I should joing their comapny and have a closer look", "screen12.RA();",
+    "Wow, how many eyes do they have? I should joing their company and have a closer look", "screen12.RA();",
     "screen38aEn.changeContent();"
 )
 
