@@ -16,22 +16,22 @@ btn4.addEventListener('click', ClickGlow4);
 
 async function ClickGlow1(){
     document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn1 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
-    await sleep(500);
+    await sleep(1000);
     document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn1 {border: 3px solid #8FF0FF; -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86); box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);}</style>";
 }
 async function ClickGlow2(){
     document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn2 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
-    await sleep(500);
+    await sleep(1000);
     document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn2 {border: 3px solid #8FF0FF; -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86); box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);}</style>";
 }
 async function ClickGlow3(){
     document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn3 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
-    await sleep(500);
+    await sleep(1000);
     document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn3 {border: 3px solid #8FF0FF; -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86); box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);}</style>";
 }
 async function ClickGlow4(){
     document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn4 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
-    await sleep(500);
+    await sleep(1000);
     document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn4 {border: 3px solid #8FF0FF; -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86); box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);}</style>";
 }
 
